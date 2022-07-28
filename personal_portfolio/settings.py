@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'blog',
+    'Project_Details',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'personal_portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./portfolio/template/'],
+        'DIRS': ['./portfolio/template/', './Project_Details/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
